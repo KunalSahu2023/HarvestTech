@@ -1,0 +1,104 @@
+
+
+/* contact styling start */
+#contact-container{
+    margin: 10px;
+    border: 1px solid gray;
+}
+#contact-container h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.address{
+    width: 35%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(36, 189, 36);
+    box-shadow: 2px 3px 10px 2px black;
+   
+}
+.address h3{
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.address pre{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.address a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    line-height: 2.5;
+}
+.address .fa-envelope:hover{
+    color: yellow;
+}
+.address .fa-phone:hover{
+    color: blue;
+}
+.address .fa-building:hover{
+    color: orchid;
+}
+.contact-form{
+    width: 45%;
+    height: 500px;
+    background-image: url("/images/contact-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 2px 3px 10px 2px black;
+}
+.contact-form form{
+    margin-top: 20px;
+    padding: 10px;
+}
+.contact-form  form label, input{
+    width: 50%;
+    height: 15px;
+    padding: 2px;
+    margin: 10px;
+}
+.contact-form form label{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 10px;
+}
+.contact-form form textarea{
+    width: 50%;
+    padding: 2px;
+    margin: 10px;
+}
+.contact-form .btn{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color:rgb(12, 12, 206);
+    border-radius: 15px;
+    box-shadow: 2px 5px 6px 1px black;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+.contact-form .btn:hover{
+    color: white;
+    background-color: rgb(7, 7, 146);
+}
+
+/* contact styling end */

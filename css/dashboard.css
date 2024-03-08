@@ -1,0 +1,225 @@
+
+/* header account section with dashboard start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    border: 1px solid red
+}
+#header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    background-color: green;
+    width: 100%;
+    height: 100px;
+}
+#header-container h1 a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 1px 2px 5px white;
+    cursor: pointer;
+}
+.header-navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header-navbar ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+.header-navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+}
+.header-navbar .dashboard{
+    background-color: grey; 
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.header-navbar .dashboard:hover{
+    text-decoration: none;
+}
+.header-navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: overline;
+}
+
+#header-container .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-container .profile a{
+    font-size: 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+#header-container .profile i:hover{
+    color: grey;
+}
+
+/* header account section with dashboard end */
+
+
+/* dashboard styling start  */
+
+/* #dashboard-container{
+    display:none;
+} */
+#dashboard-container.show-dashboard{
+    display: block;
+}
+.search-heading{
+    width: 100%;
+    height: 45px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+.search-heading .heading{
+    font-size: 25px;
+    padding: 20px;
+    float: left;
+    padding: 20px;
+    margin-left: -200px;
+    transition: 2s all;
+}
+.search-heading .search-box-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    padding: 10px;
+    gap: 20px;
+}
+.search-heading .search-box-icon .search{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 250px;
+}
+.search-heading .search-box-icon a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-heading .search-box-icon i:hover{
+    color: gray;
+}
+
+/* dashboard box styling start */
+
+#dashboard-box{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.dashboard-sidebar{
+    display: block;
+    width: 25%;
+    height: 500px;
+    margin-top: 10px;
+    box-shadow: 5px 4px 10px black;
+}
+.dashboard-sidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    margin: 5px;
+    border-bottom: 1px solid gray;
+}
+.dashboard-sidebar a:hover{
+    color: gray;
+    background-color: greenyellow;
+
+}
+.weather-container{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 4px 10px black;
+}
+.weather-container .cards{
+    margin: 10px;
+    width: 20%;
+    height: 120px;
+    box-shadow: 2px 5px 10px black;
+}
+
+
+/* profile section styling */
+
+#profile-container{
+    display: none;
+    width: 35%;
+    height: 500px;
+    box-shadow: 5px 4px 4px 2px black;
+    padding: 10px;
+    float: right;
+}
+#profile-container.show-profile{
+    display: block;
+}
+#profile-container h3{
+    font-size: 20px;
+    padding: 8px;
+    margin: 2px;
+}
+#profile-container .form{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    transition: 1s all;
+}
+.form label, input{
+    padding: 2px;
+    margin: 12px;
+    font-size: 15px;
+}
+.form input{
+width: 90%;
+text-decoration: none;
+}
+.form .btn{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    background-color: green;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+}
+.form .btn:hover{
+    background-color: rgb(13, 247, 13);
+    color: black;
+}
+
+/* dashboard box styling end */
+
+
+/* dashboard styling end */

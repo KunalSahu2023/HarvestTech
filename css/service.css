@@ -1,0 +1,116 @@
+
+
+/* service styling start */
+#service-container{
+    margin: 10px;
+    border: 1px solid gray;
+}
+#service-container h2{
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+#service-container pre{
+    font-size: 20px;
+    text-align: center
+}
+
+/* our service start */
+
+.service-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 2s all;
+}
+.service-box .card{
+    width: 25%;
+    height: 250px;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 10px 2px black;
+    text-align: center;
+    margin: 15px;
+}
+.service-box .card i{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 50px;
+    color: green;
+}
+.service-box .card h3{
+    font-size: 20px;
+}
+.service-box .card p{
+    font-size: 15px;
+    color: #666;
+}
+.service-box .card:hover{
+    box-shadow: 0px 2px 15px 3px black;
+}
+
+/* our service end */
+
+
+/* service section gallery start */
+#gallery-container{
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid gray;
+}
+.gallery-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+    margin: 10px;
+} 
+.gallery-box .cards{
+    position: relative;
+    box-shadow: 2px 2px 6px 4px black;
+    margin: 15px;
+}
+.gallery-box .cards img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.cards .intro{
+    width: 375px;
+    height: 50px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: gray;
+    color: white;
+    bottom: 0px;
+    transition: .5s all;
+}
+.gallery-box .cards .intro h3{
+    margin: 5px;
+    font-size: 40px;
+}
+.gallery-box .cards .intro pre{
+    font-size: 25px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+.gallery-box .cards:hover{
+    cursor: pointer;
+}
+.gallery-box .cards:hover .intro{
+    height: 150px;
+    bottom: 0px;
+    background: black;
+}
+.gallery-box .cards:hover pre{
+    opacity: 1;
+    visibility: visible;
+}
+.gallery-box .cards:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+/* service section gallery end */
+
+/* service styling end */
