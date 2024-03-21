@@ -3,37 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvest Tech - About page</title>
+    <title>Harvest Tech - About</title>
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+        <!-- header section start -->
+
+        <header id="header-container">
+            <h1><a href="/index.html" class="logo">Harvest Tech</a></h1>
+    
+            <!-- navbar section start -->
+            <nav class="header-navbar">
+                <ul>
+                
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/about.html">About Us</a></li>
+                <li><a href="/src/services.html">Our Services</a></li>
+                <li><a href="/src/contact.html">Contact US</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="account">
+                <button class="btn">SignUp / LogIn</button>
+            </div> -->
+        </header>
+    <!-- navbar section end -->
+    
+    
+    <!-- account section start -->`
+    <!-- <div id="account-container">
+        <div class="form-box">
+            <i class="fas fa-times" id="form-close"></i>
+            <h1>
+                <span class="signupbtn">Sign Up</span> 
+                <Span class="loginbtn disable">Log In</Span>
+            </h1>
+            <div class="underline"></div>
+            <form action="">
+            <div class="input-group">
+            <div class="input-field nameField">               
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Enter Your Name" required>
+        </div>
+    
+        <div class="input-field">
+            <i class="fa-solid fa-at"></i>
+            <input type="email" placeholder="Enter your Email" required>
+        </div>
+    
+        <div class="input-field">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+        <p><span class="text">Password suggestions</span> <a href="#">Click Here!</a></p>
+    </div>  
+    <div class="btn-field">
+        <button type="button" class="account-btn"><a href="./src/dashboard.html">Sign Up</a></button>
+    </div>
+         </form>
+        </div>
+    </div> -->
+
+    <!-- account section end -->
+    
 
     <!-- about us section start -->
 
 <div id="about-container">
     <div class="about-box">
-    <h2><a name="about">About Us</a></h2>
-    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, alias!</pre>
-    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, alias!</pre>
-    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, alias!</pre>
-    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, alias!</pre>
+    <h2>About Us</h2>
     </div>
     <div id="img-content">
-    <img src="/images/about-3.jpg" alt="about-img">
-    <div class="goal-content">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
-            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, illum?</pre>
+    <img src="/images/about-2.jpg" alt="about-img">
+    <div class="goal-content-box">
+            <div class="contents">
+                <div class="box">
+                    <h2>Our Misson</h2>
+                    <p>"Our mission is to empower individuals and communities through innovative technology solutions that address pressing societal challenges. 
+                    <br> We aim to build a more equitable and resilient future for all. Together, we envision a world where every individual has access to the tools and opportunities they need to thrive
+                </p>
+                </div>
+                <div class="box">
+                    <h2>Our Goal</h2>
+                    <p>"Our goal is to develop and deploy innovative agricultural technology solutions that increase crop yield, optimize resource utilization, and promote sustainable farming practices. <br>
+                    Through collaborative partnerships with farmers, research institutions, and industry stakeholders, we aspire to drive positive change in the agricultural sector, contributing to food security, environmental conservation, and economic prosperity."
+                </p>
+                </div>
+                <div class="box">
+                    <h2>Our Purpose</h2>
+                    <p>"Our purpose is to revolutionize the agricultural industry through innovative technology solutions that optimize resource efficiency, enhance productivity, and promote sustainability. <br>
+                    We envision a future where agriculture is not only more productive but also more environmentally sustainable and socially equitable."
+                </p>
+                </div>
+            </div>
     </div>
 </div>
 </div>
@@ -44,11 +107,10 @@
 <div id="our-team-container">
     <h2>Meet Our Team</h2>
 
-    <div class="card-box">
-
+    <div class="cards-box">
         <!-- ks card start -->
         <div class="card-ks card">
-            <img src="/images/review-1.webp" alt="ks-img">
+            <img src="/images/member-1.jpeg" alt="ks-img">
             <h4>Kunal Sahu</h4>
             <p>Front End Developer</p>
             <div class="team-social">
@@ -60,7 +122,7 @@
 
         <!-- namn jha card start -->
         <div class="card-nj card">
-            <img src="/images/review-1.webp" alt="nj-img">
+            <img src="/images/member-2.jpeg" alt="nj-img">
                 <h4>Naman Jha</h4>
                 <p>Back End Developer</p>
                 <div class="team-social">
@@ -72,7 +134,7 @@
 
              <!-- guide card start -->
             <div class="card-guide card">
-                <img src="/images/review-1.webp" alt="guide-img">
+                <img src="/images/guide.jpeg" alt="guide-img">
                 <h4>Er.Yashwant Dev</h4>
                 <p>Project Guide</p>
                 <div class="team-social">
@@ -85,6 +147,29 @@
 </div>
 
 <!-- our team section end -->
+
+<!-- footer section start -->
+<div id="footer-container">
+    <div class="footer-navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/src/about.html">About Us</a></li>
+            <li><a href="/src/services.html">Our Services</a></li>
+            <li><a href="/src/contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+        <div class="footer-social-link">
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+           <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy 2024 <a href="#">Harvest Tech.</a></p>
+        </div>
+        <p class="name">Design & implement by Kunal Sahu & Naman Jha .</p>
+</div>
+<!-- footer section end -->
 
 <script src="index.js"></script>
     
