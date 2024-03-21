@@ -240,7 +240,7 @@ button.disable{
     background-color: var(--background);
     margin:auto;
     width: 85%;
-    height: 600px;
+    height: 780px;
     line-height: 1.5;
     margin-top: 15px;
 }
@@ -253,7 +253,7 @@ button.disable{
     font-size: 15px;
 }
 #review-card-box-1, #review-card-box-2{
-    margin-top: 10px;
+    margin-top:25px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
