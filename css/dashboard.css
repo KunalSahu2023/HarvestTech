@@ -175,20 +175,20 @@
 .dashboard .content-area.board-open{
     display: block;
 }
-.dashboard .content-area .content{
-    text-align: center;
+.dashboard .content-area .contents{
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 30%;
+    left: 20%; 
+    text-align: center;
 }
-#dashboard-container .content-area .content h2{
-    font-size: 40px;
+#dashboard-container .content-area .contents h2{
+    font-size: 45px;
     font-weight: 600;
     color: rgb(120, 23, 68);
     letter-spacing: 10px;
     line-height: 2.5;
 }
-#dashboard-container .content-area .content p{
+#dashboard-container .content-area .contents h4 {
     font-size: 25px;
     letter-spacing: 5px;
     font-weight: 500;
