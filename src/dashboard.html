@@ -3,109 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvest Tech - Dashboard </title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    
+    <header id="header-container">
+        <h1><a href="/index.html" class="logo">Harvest Tech</a></h1>
 
-    <!-- header-account section with dashboard start -->
-<div id="header-container">
-    <h1><a href="/index.html">Harvest Tech</a></h1>
-
-<!-- navbar section start -->
-<div class="header-navbar">
-    <ul>
-    <li><a href="#" class="dashboard">Dashboard</a></li>
-    <li><a href="/src/index.js">Home</a></li>
-    <li><a href="/src/about.html">About Us</a></li>
-    <li><a href="/src/services.html">Our Services</a></li>
-    <li><a href="/src/contact.html">Contact US</a></li>
-    </ul>
-</div>
-</div>
+        <!-- navbar section start -->
+        <nav class="header-navbar">
+            <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="/src/about.html">About Us</a></li>
+            <li><a href="/src/services.html">Our Services</a></li>
+            <li><a href="/src/contact.html">Contact US</a></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <button class="btn">SignUp / LogIn</button>
+        </div>
+    </header>
 <!-- navbar section end -->
 
-<!-- header-account section with dasboard end -->
+    <div id="dashboard-container">
+            <div class="logo">
+                <h3>Harvest Tech</h3>
+                <div class="dashboard-navbar">
+                    <form action="">
+                        <input type="search" name="" id="">
+                        <a href="#"><li class="fas fa-search"></li></a>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        <a href="#" class=""><i class="fa-solid fa-circle-user"></i></a>
+                    </form>
+                </div>
+            </div>
 
-<!-- dashboard section start -->
-
-<!-- navbar section end -->
-
-<div id="dashboard-container">
-    <!-- navbar section start -->
-
-   <div class="search-heading">
-    <h2 class="heading">Harvest Tech</h2>
-    <div class="search-box-icon">
-        <input class="search" type="search" placeholder="search..">
-        <a href=""><i class="fa-solid fa-bell"></i></a>
-        <a href=""><i class="fa-solid fa-user profile"></i></a>
+            <!-- dashboard sidebar -->
+            <div class="dashboard">
+                <div class="sidebar">
+                    <div class="sidebar-box">
+                    <div class="sidebar-top">
+                        <div class="side-menu"><span class="dashboard-btn"> <i class="fa-sharp fa-solid fa-house"></i> Dashboard</span></div>
+                        <div class="side-menu"><span class="weather"> <i class="fa-sharp fa-solid fa-house"></i> Weather</span></div>
+                        <div class="side-menu"><span class="profile"> <i class="fa-sharp fa-solid fa-house"></i> Profile</span></div>
+                        <div class="side-menu"><span> <i class="fa-sharp fa-solid fa-house"></i> Notification</span></div>
+                        <div class="side-menu"><span> <i class="fa-sharp fa-solid fa-house"></i> Event</span></div>
+                    </div>
+                    <div class="sidebar-bottom">
+                        <div class="side-menu"><span> <i class="fa-sharp fa-solid fa-house"></i> Logout</span></div>
+                        <div class="side-menu "><span> <i class="fa-sharp fa-solid fa-house"></i> Setting</span></div>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="content-area">
+                    <div class="content">
+                        <h2>Welcome in Harvest Tech</h2>
+                        <p>Growing Smarter, Harvesting Better</p>
+                    </div>
+                </div>
+            </div>
     </div>
-   </div>
-
-<div id="dashboard-box">
-    <div class="dashboard-sidebar">
-    <a href="#"><i class="fa-solid fa-house"></i> Dashboard</a>
-    <a href=""><i class="fa-solid fa-house"></i></i> Crop</a>
-    <a href=""><i class="fa-solid fa-house"></i></i> Dashboard</a>
-    <a href=""><i class="fa-solid fa-house"></i></i> Dashboard</a>
-    <a href=""><i class="fa-solid fa-house"></i></i> Dashboard</a>
-</div>
-<!-- dashboard end -->
-
-<!-- weather section start -->
-<div class="weather-container">
-    <!-- <div class="cards">
-        Lorem ipsum dolor sit amet.
+    <!-- weather section -->
+    <div id="weather">
+        <div id="weather-container">
+            <div class="container-1">
+                <i class="fas fa-sun"></i> <span>28.6*C</span>
+                <span>Clear Day</span>
+                <hr>
+                <i class="fas fa-sun"></i><span>Istambul</span>
+                <i class="fas fa-sun"></i><span>Istambul</span>
+            </div>
+            <div class="container-2">
+                <div class="box-1">
+                    <div class="box-01">
+                        <i class="fas fa-sun"></i><span>Wind Speed</span>
+                        <span>28km/hr</span>
+                    </div>
+                    <div class="box-01">
+                        <i class="fas fa-sun"></i><span>Pressure</span>
+                        <span>1008 hPa</span>
+                    </div>
+                    <div class="box-01">
+                     <i class="fas fa-sun"></i><span>Sunrise</span>
+                    <span>06:26</span>
+                            </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="box-01">
+                            <i class="fas fa-sun"></i><span>Humidity</span>
+                            <span>48%</span>
+                        </div>
+                        <div class="box-01">
+                            <i class="fas fa-sun"></i><span>Visibilty</span>
+                            <span>10Km</span>
+                        </div>
+                        <div class="box-01">
+                            <i class="fas fa-sun"></i><span>Sunset</span>
+                            <span>19:44</span>
+                        </div>
+                            </div>
+                </div>
+                <div class="container-3">
+                    <div class="box">
+                        <div class="boxx">
+                            <span>Monday</span><span>18:00</span>
+                        </div>
+                        <div class="boxx">
+                            <span>28.6*C</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxx">
+                            <span>Monday</span><span>18:00</span>
+                        </div>
+                        <div class="boxx">
+                            <span>28.6*C</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxx">
+                            <span>Monday</span><span>18:00</span>
+                        </div>
+                        <div class="boxx">
+                            <span>28.6*C</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxx">
+                            <span>Monday</span><span>18:00</span>
+                        </div>
+                        <div class="boxx">
+                            <span>28.6*C</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxx">
+                            <span>Monday</span><span>18:00</span>
+                        </div>
+                        <div class="boxx">
+                            <span>28.6*C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="weather-container-bottom">
+                <h2>Next 7 days</h2>
+                <div class="date-box">
+                    <div class="date-box-1">
+                        <h4>All Days</h4>
+                    </div>
+                    <div class="date-box-1">
+                        <h4>20 Mar Wed</h4>
+                    </div>
+                    <div class="date-box-1">
+                        <h4>21 Mar Thu</h4>
+                    </div>
+                    <div class="date-box-1">
+                        <h4>22 Mar Fri</h4>
+                    </div>
+                    <div class="date-box-1">
+                        <h4>23 Mar Sat</h4>
+                    </div>
+                    <div class="date-box-1">
+                        <h4>24 Mar Sun</h4>
+                    </div>
+                    <div class="date-box-1">
+                        <h4>25 Mar Mon</h4>
+                    </div>
+                </div>
+                
+                    <div id="container-bottom">
+                        <div class="date-boxx">
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-boxx">
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <div class="boxx">
+                                    <span>20 Mar wed</span>
+                                    <span>18:00</span>
+                                </div>
+                                <div class="boxx">
+                                    <i class="fas fa-sun"></i>
+                                    <span>28*C</span>
+                                    <span>Clear</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+           
+            </div>
     </div>
-    <div class="cards">
-        Lorem ipsum dolor sit amet.
-    </div>
-    <div class="cards">
-        Lorem ipsum dolor sit amet.
-    </div>
-    <div class="cards">
-        Lorem ipsum dolor sit amet.
-    </div> -->
-</div>
-</div>
-</div>
-<!-- weather section end -->
-
-<!-- dashboard section end -->
 
 <!-- profile section start -->
- <div id="profile-container">
-<h3>Personal Information</h3>
 
-<div class="form">
-<form action="">
-
-        <label for="firstName">First Name</label>
-        <br>
-        <input type="text" required>
-        <br>
-        <label for="lastName">Last Name</label>
-        <br>
-        <input type="text" required>
-        <br>
-    <label for="email">Email Address</label>
-    <br>
-    <input type="email" required>
-    <br>
-    <label for="userName">Username</label>
-    <br>
-    <input type="text" required>
-
-</form>
-<button class="btn">Save</button>
-</div>
-</div>
-<!-- profile section end -->
-
-
-
-<script src="index.js"></script>
+    <!-- profile hover start -->
+    <div class="profile-menu">
+                    <div class="menu">
+                        <a href="#">
+                            <p>Edit Profile</p>
+                        </a>
+                        </div>
+                        <hr>
+                        <div class="menu">
+                            <a href="#">
+                        <p>Logout</p>
+                            </a>
+                        </div>
+                        <hr>
+                    <div class="menu">
+                        <a href="#">
+                    <p>Help & Support</p>
+                    </div>
+                </a>
+    </div>
+    <!-- profile hover end -->
+    <div id="profile-container">
+    <h3>Personal Information</h3>
+    <div class="form">
+        <form action="">
+            <p><label for="firstName">First Name</label><br>
+            <input type="text" required></p>
+        <p><label for="lastName">Last Name</label><br>
+            <input type="text" required></p>
+            <p><label for="email">Email Address</label><br>
+                <input type="email" required></p>
+                <p><label for="userName">Username</label><br>
+                <input type="text" required></p>
+            </form>
+            <button class="btn">Save</button>
+        </div>
+    </div>
+    <!-- profile section end -->
+    <script src="/src/dashboard.js"></script>
 </body>
 </html>

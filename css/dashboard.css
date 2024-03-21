@@ -1,225 +1,425 @@
-
-/* header account section with dashboard start */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-div{
-    border: 1px solid red
-}
+
+/* header styling start */
 #header-container{
     display: flex;
     justify-content: space-around;
     align-items: center;    
     background-color: green;
     width: 100%;
-    height: 100px;
+    height: 70px;
+    margin: auto;
+    z-index: 1;
 }
-#header-container h1 a{
+#header-container .logo{
     color: white;
-    font-size: 35px;
-    font-weight: 600;
-    text-shadow: 1px 2px 5px white;
+    font-size: 30px;
+    font-weight: 00;
+    text-shadow: 1px 2px 5px black;
     cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .header-navbar ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 .header-navbar ul li{
     list-style-type: none;
     margin-left: 30px;
+    padding: 5px;
 }
 .header-navbar ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 17px;
-}
-.header-navbar .dashboard{
-    background-color: grey; 
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-}
-.header-navbar .dashboard:hover{
-    text-decoration: none;
+    font-size: 20px;
 }
 .header-navbar ul li a:hover{
     background-color: black;
-    color: white;
-    text-decoration: overline;
+    color: green;
+    border-radius: 3px;
 }
-
-#header-container .profile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#header-container .profile a{
-    font-size: 20px;
-    margin-right: 15px;
-    text-decoration: none;
-    color: black;
-}
-#header-container .profile i:hover{
-    color: grey;
-}
-
-/* header account section with dashboard end */
-
-
-/* dashboard styling start  */
-
-/* #dashboard-container{
-    display:none;
-} */
-#dashboard-container.show-dashboard{
-    display: block;
-}
-.search-heading{
+.account .btn{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
     width: 100%;
     height: 45px;
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
+    color: white;
+    border-radius: 10px;
     padding: 10px;
-    border: 1px solid black;
-}
-.search-heading .heading{
-    font-size: 25px;
-    padding: 20px;
-    float: left;
-    padding: 20px;
-    margin-left: -200px;
-    transition: 2s all;
-}
-.search-heading .search-box-icon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    float: right;
-    padding: 10px;
-    gap: 20px;
-}
-.search-heading .search-box-icon .search{
-    width: 100%;
-    height: 30px;
-    border-radius: 5px;
-    padding-left: 250px;
-}
-.search-heading .search-box-icon a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+    box-shadow: 1px 1px 3px 1px black;
+    background-color:rgb(23, 22, 23);
     cursor: pointer;
 }
-.search-heading .search-box-icon i:hover{
-    color: gray;
+.account .btn:hover{
+    color: black;
+    background-color: violet;
 }
 
-/* dashboard box styling start */
+/* header styling end */
 
-#dashboard-box{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+.navbar{
+    width: 100%;
+    height: 70px;
+    border: 1px solid white;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.nav ul{
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+    pad: 5px;
+}
+.nav ul a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
 }
 
-.dashboard-sidebar{
-    display: block;
-    width: 25%;
-    height: 500px;
-    margin-top: 10px;
-    box-shadow: 5px 4px 10px black;
+#dashboard-container .logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 60px;
+    margin: 2px 5px;
+    background-color: aquamarine;
+    border: 1px solid navy;
 }
-.dashboard-sidebar a{
-    display: block;
+#dashboard-container .logo .dashboard-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#dashboard-container .logo .dashboard-navbar input{
+    padding: 8px;
+    width: 800px;
+    border-radius: 8px;
+}
+#dashboard-container .logo .dashboard-navbar a{
+    font-size: 25px;    
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    padding: 20px;
-    margin: 5px;
-    border-bottom: 1px solid gray;
-}
-.dashboard-sidebar a:hover{
-    color: gray;
-    background-color: greenyellow;
-
-}
-.weather-container{
-    width: 70%;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 5px 4px 10px black;
-}
-.weather-container .cards{
     margin: 10px;
+    padding: 5px;
+    float: both;
+}
+#dashboard-container .logo .dashboard-navbar a:hover{
+    cursor: pointer;
+    color: blue;
+}
+#dashboard-container .logo h3{
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px black ;
+    color: white;
+}
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard .sidebar{
+    margin-left: 5px;
     width: 20%;
-    height: 120px;
-    box-shadow: 2px 5px 10px black;
+    height: 100vh;
+    background: linear-gradient(rgba(0,235,0,0.5),rgba(0,235,0,0.5));
+    border: 1px solid black;
+}
+.dashboard .sidebar-box{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 15px;
+}
+.sidebar-top, .sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.sidebar-top .side-menu, .sidebar-bottom .side-menu{
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+.sidebar-top .side-menu, .sidebar-bottom .side-menu span{
+    cursor: pointer;
+}
+.sidebar-top .side-menu:hover, .sidebar-bottom .side-menu:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+.dashboard .content-area{  
+    width: 80%;
+    height: 100vh;
+    background-color: aqua;
+    position: relative;
+    z-index: -1;
+    display: none;
+}
+.dashboard .content-area.board-open{
+    display: block;
+}
+.dashboard .content-area .content{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+#dashboard-container .content-area .content h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(120, 23, 68);
+    letter-spacing: 10px;
+    line-height: 2.5;
+}
+#dashboard-container .content-area .content p{
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 500;
 }
 
+/* weather section */
+#weather{
+    display: none;
+    background-color: blueviolet;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 79%;
+    height: 100vh;
+    margin: 6px;
+    overflow: scroll;
+    z-index: 1;
+    margin: 10px;
+}
+#weather.open{
+    display: block;
+}
+#weather-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    transition: 1s all ease;
+    margin-bottom: 10px;
+}
+.container-1{
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 20%;
+    height: 300px;
+    border: 1px solid blue;
+    background-color: gold;
+    border-radius: 10px;
+}
+.container-2{
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    border: 1px solid blue;
+    height: 350px;
+}
+.box-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+.box-1 .box-01{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid violet;
+    text-align: center;
+    width: 230px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 10px;
+}
 
-/* profile section styling */
+.container-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 330px;
+    border: 1px solid blue;
+    background-color: gold;
+    border-radius: 10px;
+}
+.container-3 .box{    
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.container-3 .box .boxx{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#weather-container-bottom{
+    width: 100%;
+}
+#weather-container-bottom .date-box{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid gray;
+}
+#weather-container-bottom .date-box .date-box-1{
+    background-color: green;
+    padding: 5px;
+    margin: 10px;
+}
+#weather-container-bottom .date-boxx{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+#weather-container-bottom .date-boxx .boxs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: green;
+    border: 1px solid gray;
+    width: 350px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+}
+#weather-container-bottom .date-boxx .boxs .boxx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* profile section styling start */
+
+.profile-menu{
+    width: 70px;
+    height: 120px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    background-color: white;
+    border: 2px solid gray;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    border-radius: 10px;
+}
+.profile-menu.avatar-open{
+    display: flex;
+}
+.profile-menu .menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+.profile-menu .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 8px;
+    font-weight: 600;
+}
+ .profile-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: green;
+ }
+
+/* profile styling end */
 
 #profile-container{
     display: none;
-    width: 35%;
+    width: 32%;
     height: 500px;
-    box-shadow: 5px 4px 4px 2px black;
     padding: 10px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 21%;
+    right: 5%;
     float: right;
+    box-shadow: 5px 4px 4px 2px black;
+    z-index: 5;
 }
-#profile-container.show-profile{
+#profile-container.profile-open{
     display: block;
 }
 #profile-container h3{
-    font-size: 20px;
-    padding: 8px;
-    margin: 2px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
 }
 #profile-container .form{
-    display: block;
-    font-size: 15px;
-    font-weight: 600;
+    margin: auto;
     padding: 10px;
-    margin: 5px;
-    transition: 1s all;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: .5s all;
 }
 .form label, input{
-    padding: 2px;
-    margin: 12px;
-    font-size: 15px;
+    padding: 4px;
+    margin: 15px;
 }
 .form input{
-width: 90%;
-text-decoration: none;
+    width: 80%;
+    text-decoration: none;
+    border-radius: 5px;
 }
 .form .btn{
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 35px;
     text-align: center;
     background-color: green;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
-    border-radius: 10px;
-    padding: 3px;
-    margin: 5px;
+    padding: 5px;
+    margin: 5px 15px;
+    border-radius: 7px;
 }
 .form .btn:hover{
-    background-color: rgb(13, 247, 13);
+    background-color: rebeccapurple;
     color: black;
 }
+/* profile section end */
 
-/* dashboard box styling end */
 
 
-/* dashboard styling end */
+
+
+
